@@ -1,11 +1,11 @@
 account_id = "277cb0b7ced2e2eb61bd3617bfb08360"
-name = "status.bracy.dev"
+name = "status-bracy-dev"
 main = "./src/worker/index.ts"
 compatibility_flags = [ "streams_enable_constructors" ]
 compatibility_date = "2021-09-29"
 workers_dev = true
-# npx --no -- wrangler kv:namespace create status.bracy.dev
-kv_namespaces = [ { binding = "KV_STORE", id = "1c9161741a354da9904a2e56ff2f7f08" }, ]
+# npx --no -- wrangler kv:namespace create status-bracy-dev
+kv_namespaces = [ { binding = "KV_STORE", id = "13a63565430d43269aa1a2492dcd4667" }, ]
 
 [site]
 bucket = "./dist/client"
@@ -14,7 +14,7 @@ bucket = "./dist/client"
 port = 3000
 
 [env.production]
-kv_namespaces = [ { binding = "KV_STORE", id = "1c9161741a354da9904a2e56ff2f7f08" }, ]
+kv_namespaces = [ { binding = "KV_STORE", id = "13a63565430d43269aa1a2492dcd4667" }, ]
 
 [env.production.triggers]
 crons = [
