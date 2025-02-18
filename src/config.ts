@@ -11,13 +11,18 @@ export const config: Config = {
     {
       id: 'bracy.dev',
       url: 'https://bracy.dev',
-      description: 'Main site.',
+      description: 'Main platform and services.',
       followRedirect: true,
     },
     {
       id: 'notes.bracy.dev',
       url: 'https://notes.bracy.dev',
-      description: 'Note site.',
+      description: 'Documentation and resources.',
+    },
+    {
+      id: 'testing.bracy.dev',
+      url: 'https://testing.bracy.dev',
+      description: 'QA and feature testing.',
     },
   ],
 }
